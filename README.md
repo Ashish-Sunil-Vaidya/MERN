@@ -1,4 +1,4 @@
-# MERN
+# Workout Companion
 
--  A simple app made to demonstrate CRUD operations and user authentication
--  v1.0.0
+-  This is a simple workout companion app that allows users to create and track their workouts. My First Full Stack App.
+-  v2.0.0
