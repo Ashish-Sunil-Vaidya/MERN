@@ -10,7 +10,7 @@ export default function WorkoutDetails({ workout }) {
   const {user} = useAuthContext()
   
 
-  const handleClick = async () => {
+  const handleDelete = async () => {
    
     if(!user)
     {
@@ -26,7 +26,7 @@ export default function WorkoutDetails({ workout }) {
       }
       );
     
-
+    
     const data = await res.json();
 
     if (res.ok) {
@@ -52,7 +52,7 @@ export default function WorkoutDetails({ workout }) {
         </p>
       </div>
       <div className="card-col-2">
-        <button className="delete-button" onClick={handleClick}>
+        <button className="delete-button" onClick={handleDelete}>
           <span className="material-symbols-outlined">delete</span>
         </button>
       </div>

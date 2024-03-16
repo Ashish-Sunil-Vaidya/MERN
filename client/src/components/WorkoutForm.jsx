@@ -9,7 +9,8 @@ const WorkoutForm = () => {
   const [error, setError] = useState(null);
   const { dispatch } = useWorkoutContext();
   const [emptyFields, setEmptyFields] = useState([]);
-  const {user} = useAuthContext()
+  const {user} = useAuthContext();
+  console.log('=== user WorkoutForm.jsx [13] ===', user);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

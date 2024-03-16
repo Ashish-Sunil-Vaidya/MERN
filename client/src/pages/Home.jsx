@@ -8,11 +8,11 @@ import { useAuthContext } from "../hooks/useAuthContext";
 export default function Home() {
   const { workouts, dispatch } = useWorkoutContext();
   const { user } = useAuthContext();
-
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch("/api/workouts", {
         headers: {
+          "Content-Type": "application/json",
           Authorization: `Bearer ${user.token}`,
         },
       });
